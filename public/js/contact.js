@@ -21,7 +21,8 @@ $( document ).ready(function() {
         if($(name).val().trim() == ''){
             showValidate(name);
          
-        }
+         }
+        
 
         if($(subject).val().trim() == ''){
             showValidate(subject);

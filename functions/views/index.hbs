@@ -26,33 +26,7 @@
 
 <body>
   <!-- START HEADER -->
-  <!-- START HEADER -->
-  <header class="headerMain">
-    <div class="main-menu">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/"><img src="img/logo.png" alt="logo" style="width: 150px" /></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="/">Home</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/about">about</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link" href="/contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+  {{> header headerDATA}}
   <!-- END HEADER -->
 
   <!-- START MAIN AREA -->
@@ -86,7 +60,6 @@
       </div>
 
       <!-- Modal_1 -->
-
       <div class="modal fade" id="module1" tabindex="-1" aria-labelledby="module1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content border-0">
@@ -97,10 +70,21 @@
               </button>
             </div>
             <div class="modal-body">
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item"><i class="fas fa-phone-square"></i> Phone: +1(647)302-6226</li>
-                <li class="list-group-item"><i class="fas fa-envelope-square"></i> E-mail: krouhifar@gmail.com</li>
-              </ul>
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-sm-12 align-self-center">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item pb-3"><i class="fas fa-phone-square"></i> Phone: +1(647)302-6226</li>
+                      <li class="list-group-item pt-3"><i class="fas fa-envelope-square"></i> E-mail:
+                        krouhifar@gmail.com
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4 col-sm-12">
+                    <img src="img/Kamyab.jpg" alt="Kamyab" class="img-fluid img-thumbnail center-block">
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -159,13 +143,16 @@
                 My name is Kamyab Rouhifar I am web designer and developer.
               </p>
               <p class="para">
-                I know three languages such as Persian, Turkish, and English.
-                I am from Iran and I have 2 years programming knowledge. I have done projects such as
+                I know three languages such as English, Turkish,and Persian.
+                I've always been into creating awesome stuff online and I have 2 years programming knowledge. I have
+                done projects such as
                 creating C++ application by retrieving data from MySQL database management system.
-                Mostly I create web application by using NodeJs as a backend and MongoDB as a database.
+                Mostly I spent time in UI development like creating web application by using NodeJs as a backend and
+                MongoDB as a database.
                 Last but not least, Most my web applications are hosting live by using Netlify, Heroku ,etc.
-                You can download my Resume for more details 😀 👇.
+
               </p>
+              <p><b>You can download my Resume for more details 😀 👇.</b></p>
             </div>
             <a href="resume/Kamyab Rouhifar Resume.pdf" download="Kamyab Rouhifar Resume">
               <button type="button" class="btn button primary-button text-uppercase">
@@ -187,7 +174,10 @@
           <div class="col-lg-12 text-center services-title gs_reveal2">
             <h1 class="text-uppercase title-text">Programming experience</h1>
             <p class="para">
-              Here is some applications that I made so far. <b>Please click each Icon to see more details.</b>
+              Here is some applications that I made so far.
+            </p>
+            <p class="para">
+              <b><kbd>Please click each Icon to see more details.</kbd></b>
             </p>
           </div>
         </div>
@@ -294,6 +284,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="swiper-slide" style="background-image:url(img/portfolio/Deserialization_1.JPG)">
+                  <div class="details">
+                    <div class="desc-details">
+                      <h3>Java App</h3>
+
+                    </div>
+                  </div>
+                </div>
               </div>
               <!-- Add Pagination -->
               <div class="swiper-pagination"></div>
@@ -349,27 +347,7 @@
   </main>
   <!-- END MAIN AREA -->
   <!-- START FOOTER AREA -->
-  <footer class="footer-area">
-    <div class="container">
-      <div class="site-logo text-center py-4">
-        <a href="#"><img src="img/logo.png" alt="logo" width="100px" class="img-fluid img-thumbnail"></a>
-      </div>
-      <div class="social text-center">
-        <h5 class="text-uppercase">Follow me</h5>
-        <a href="https://github.com/krouhifar" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://www.instagram.com/kamyabrouhi5" target="_blank"><i class="fab fa-instagram"></i></a>
-        <a href="tel:+16473026226" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/kamyab-rouhifar-84438818a/" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-      </div>
-      <div class="copyrights text-center">
-        <p class="para" style="list-style: none;">
-          Copyright ©2021 All rights reserved | This template is made with by
-          <span style="color: var(--primary-color);">Kamyab Rouhifar</span>
-        </p>
-      </div>
-    </div>
-  </footer>
+  {{>footer}}
   <!-- END FOOTER AREA -->
   <!-- Bootstrap JS file -->
   <script>

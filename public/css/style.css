@@ -6,13 +6,6 @@
   box-sizing: content-box;
 }
 
-.headerMain .main-menu .navbar .navbar-brand {
-  padding: 0 2rem 0 1rem;
-}
-.headerMain .main-menu .navbar {
-  padding: 0rem 2rem;
-}
-
 .headerMain .main-menu .nav-item .nav-link {
   font-family: var(--roboto);
   text-transform: uppercase;
@@ -44,7 +37,7 @@
 .navbar-brand > img.img_small{
   width: 70px !important;
     margin: 10px;
-}
+} 
 
 /*--- End Header CSS ---*/
 
@@ -266,12 +259,16 @@ footer.footer-area .social a:hover > i{
 
 /* End footer area */
 
-@media only screen and (max-width: 760px){
+@media only screen and (max-width: 780px){
+
+.img-fluid{
+  display: block;
+  margin: auto;
+}
+
   .site-main > .services-area .services {
     width: auto;
   }
-
-
   .details .desc-details {
   justify-content: center;
   }
