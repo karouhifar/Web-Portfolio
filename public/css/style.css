@@ -58,13 +58,8 @@
   font-weight: 800;
 }
 .site-main .site-banner .site-title {
-  padding-left: 15%;
+  padding-left: 10%;
 }
-
-.site-main .site-banner .site-title h1 {
-  font-size: 5rem;
-}
-
 .site-main .site-banner .site-title h4 {
   font-size: 1rem;
 }
@@ -72,6 +67,82 @@
 .site-main .site-banner .banner-image > img {
   padding: 2rem 0;
 }
+
+.title-text {
+  margin-bottom: .25em;
+}
+
+.title-text--intro {
+  font-weight: 300;
+}
+
+.title-text--intro strong {
+  display: block;
+  font-family: var(--Lobster);
+}
+
+.subtitle-text {
+  margin: 0;
+  font-size: 1.25rem;
+}
+.intro_name h1 {
+line-height: 1;
+margin: 0;
+font-size: 3rem;
+}
+.subtitle-text--intro {
+    padding: .25em 1em;
+    font-family: var(--Coda);
+    margin-bottom: 1em;
+    color: var( --text-color-white);
+}
+
+.intro_name {
+  position: relative;
+  font-size: 2rem;
+}
+
+.intro__img {
+  box-shadow: var(--box-shadow-img);
+}
+.intro__img_2 {
+  box-shadow: var(--box-shadow-img);
+}
+
+.subtitle-text--intro {
+  display: inline-block;
+}
+
+
+  .intro_name {
+      display: grid;
+      width: min-content;
+      margin: 0 auto;
+      grid-column-gap: 5%;
+      grid-template-areas: 
+          "img title"
+          "img subtitle";
+      grid-template-columns: min-content max-content;
+      margin-bottom: 10%;
+  }
+  
+  .intro__img {
+      grid-area: img;
+      min-width: 180px;
+      position: relative;
+      z-index: 2;
+  }    
+  
+  .subtitle-text--intro {
+    align-self: start;
+    grid-column: 1 / span 3;
+    grid-row: 2/ 3;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    max-width: calc(100% + 1.5em);
+  }
+
 
 .button {
   padding: 0.8rem 2.2rem;
@@ -110,6 +181,13 @@
   content: " ";
   z-index: -1;
   border-radius: 20px;
+}
+.center-block {
+height: 100px !important;
+}
+
+.f-56 {
+  font-size: 35px;
 }
 /* End SECTION_1 AREA */
 
@@ -276,4 +354,38 @@ footer.footer-area .social a:hover > i{
   .details .desc-details h3{
   margin: 0px 10px 0 10px;
   }
+
+
+ 
 }
+
+@media only screen and (max-width: 992px){
+  .site-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+   }
+  }
+
+  @media only screen and (max-width: 490px){
+    .intro__img {
+      min-width: 100px;
+  }
+  .intro_name {
+    font-size: 1rem;
+  }
+  .subtitle-text {
+  font-size: 1rem;
+  }
+
+  .subtitle-text--intro {
+  grid-column: 1 / span 6;
+  }
+
+  .button {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.75rem;
+  }
+  }
+  
