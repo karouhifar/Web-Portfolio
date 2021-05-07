@@ -422,7 +422,7 @@ footer.footer-area .social a:hover > i{
     font-size: 1rem;
   }
   .subtitle-text {
-  font-size: 1rem;
+    font-size: 85%;
   }
 
   .subtitle-text--intro {
