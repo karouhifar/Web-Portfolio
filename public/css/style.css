@@ -76,8 +76,15 @@
   font-weight: 300;
 }
 
-.title-text--intro strong {
-  display: block;
+.title-text .letter-whole-animate .letter-animate .letters-animate {
+  display: inline-block;
+  transform-origin: 0 100%;
+  font-family: var(--Lobster);
+}
+.title-text .letter-whole-animate .letter-animate{
+  transform-origin: 0 100%;
+  overflow: hidden;
+  padding-bottom: 5px;
   font-family: var(--Lobster);
 }
 
@@ -427,3 +434,5 @@ footer.footer-area .social a:hover > i{
     font-size: 0.75rem;
   }
   }
+
+  

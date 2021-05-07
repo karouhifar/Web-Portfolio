@@ -1,5 +1,7 @@
-// --- sticky navigation menu header
-$( document ).ready(function() {
+
+
+$(document).ready(function ()
+{
     // let nav_offset_top = $('.headerMain').height() +60;
     //   function navbarFixed() {
     //        if ($('.headerMain').length) {
@@ -77,15 +79,22 @@ let tl = gsap.timeline(  {
   // add animations and labels to the timeline
 tl.from(target.scrollPosition.y, {y:100, opacity:0, ease:"back.out(1.7)", duration:1, stagger:0.5});
 });
-
-
+  
     anime.timeline({})
         .add({
-            targets: '.intro_name .title-text',
+            targets: '.title-text',
+            opacity: [0,1],
+            easing: "easeOutExpo",
+            duration: 600,
+            delay:1000
+        })
+        .add({
+            targets: '.letters-animate',
             scale: [0, 1],
             duration: 1500,
             elasticity: 600,
-            delay: 1000
+            delay: anime.stagger(400),
+            offset: '-=300'
         }).add({
         targets: '.animate-text  .line',
         opacity: [0.5,1],
@@ -119,9 +128,3 @@ tl.from(target.scrollPosition.y, {y:100, opacity:0, ease:"back.out(1.7)", durati
         duration: 600
         });
     });
-
-
-  
-      
-
- 
