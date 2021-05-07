@@ -427,6 +427,7 @@ footer.footer-area .social a:hover > i{
 
   .subtitle-text--intro {
   grid-column: 1 / span 6;
+  top: -18px;
   }
 
   .button {
