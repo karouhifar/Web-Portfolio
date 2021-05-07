@@ -124,8 +124,47 @@ font-size: 3rem;
           "img subtitle";
       grid-template-columns: min-content max-content;
       margin-bottom: 10%;
+      line-height: 1;
+  }
+
+
+  .animate-text {
+    position: relative;
+    color: beige;
   }
   
+  .animate-text  .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+    line-height: 1em;
+  }
+  
+  .animate-text  .line {
+    position: absolute;
+    left: 0;
+    top: 13px;
+    bottom: 0;
+    margin: auto;
+    font-size: x-large;
+    height: 3px;
+    width: 100%;
+    background-color: beige;
+    transform-origin: center;
+}
+  
+  
+  .animate-text  .letters {
+    display: inline-block;
+    margin-top: 13px;
+    opacity: 0;
+    padding: 2px;
+  }
+
+
+
   .intro__img {
       grid-area: img;
       min-width: 180px;
@@ -388,4 +427,3 @@ footer.footer-area .social a:hover > i{
     font-size: 0.75rem;
   }
   }
-  

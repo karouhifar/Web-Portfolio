@@ -63,7 +63,7 @@ var targets = [
 
 targets.forEach(function(target, i){
 
-let tl = gsap.timeline({
+let tl = gsap.timeline(  {
     // yes, we can add it to an entire timeline!
     scrollTrigger: {
       trigger: target.scrollPosition.x,
@@ -77,6 +77,47 @@ let tl = gsap.timeline({
   // add animations and labels to the timeline
 tl.from(target.scrollPosition.y, {y:100, opacity:0, ease:"back.out(1.7)", duration:1, stagger:0.5});
 });
+
+
+    anime.timeline({})
+        .add({
+            targets: '.intro_name .title-text',
+            scale: [0, 1],
+            duration: 1500,
+            elasticity: 600,
+            delay: 1000
+        }).add({
+        targets: '.animate-text  .line',
+        opacity: [0.5,1],
+        scaleX: [0, 1],
+        easing: "easeInOutExpo",
+            duration: 700,
+            offset: '-=300'
+        }).add({
+        targets: '.animate-text  .line',
+        duration: 600,
+        easing: "easeOutExpo",
+        translateY: (el, i) => (-0.625 + 0.625*2*i) + "em"
+        }).add({
+        targets: '.animate-text  .letters-left',
+        opacity: [0,1],
+        translateX: ["0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=300'
+        }).add({
+        targets: '.animate-text  .letters-right',
+        opacity: [0,1],
+        translateX: ["-0.5em", 0],
+        easing: "easeOutExpo",
+        duration: 600,
+        offset: '-=600'
+        }).add({
+        targets: '.animate-text  .line',
+        opacity: [1,0],
+        easing: "easeOutExpo",
+        duration: 600
+        });
     });
 
 
