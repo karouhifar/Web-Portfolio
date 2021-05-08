@@ -132,6 +132,7 @@ font-size: 3rem;
       grid-template-columns: min-content max-content;
       margin-bottom: 10%;
       line-height: 1;
+      float: right;
   }
 
 
@@ -235,6 +236,10 @@ height: 100px !important;
 .f-56 {
   font-size: 35px;
 }
+
+.site-buttons{
+  float: right;
+}
 /* End SECTION_1 AREA */
 
 /* Start SECTION_2 AREA */
@@ -248,7 +253,9 @@ height: 100px !important;
 .site-main .about-area .about-title .paragraph > p{
     padding: .4rem 0;
 }
-
+.about-image {
+  float: right;
+}
 .paragraph.py-4 {
   margin-left: 40px;
 }
@@ -427,7 +434,7 @@ footer.footer-area .social a:hover > i{
   }
 
   .subtitle-text--intro {
-    grid-column: 1 / span 9;
+    grid-column: 1 / span 6;
     top: -19px;
   }
 
