@@ -2,6 +2,8 @@
 
 $(document).ready(function ()
 {
+    // --- ALTERNATIVE WAY --- //
+    
     // let nav_offset_top = $('.headerMain').height() +60;
     //   function navbarFixed() {
     //        if ($('.headerMain').length) {
@@ -69,7 +71,7 @@ let tl = gsap.timeline(  {
     // yes, we can add it to an entire timeline!
     scrollTrigger: {
       trigger: target.scrollPosition.x,
-      start:"6% 85%", // Start Scroll event
+      start:"6% 90%", // Start Scroll event
       end:"bottom 25%", // End Scroll event
       // events : OnEnter  OnLeave  OnEnterBack  OnLeaveBack
       toggleActions: "restart none none reverse"
@@ -128,3 +130,9 @@ tl.from(target.scrollPosition.y, {y:100, opacity:0, ease:"back.out(1.7)", durati
         duration: 600
         });
     });
+
+
+  
+      
+
+ 

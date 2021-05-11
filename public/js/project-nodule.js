@@ -1,5 +1,5 @@
 // Showing the project details in module
-// Used by Vanilla JS
+
 $( document ).ready(function() {
 
 var exampleModal = document.getElementById('projectModal');
@@ -31,7 +31,6 @@ TitleArray.forEach ((TitleArrays) => {
         dataText = `${TitleArrays.JS} project information`;
         bodyFormat.setAttribute("href",bodyTextAnchor.JS);
         bodyFormat.textContent = bodyText.JS;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.JS);
         bodyFormatGithub.textContent= bodyTextGithub.JS;
         bodyFormatImg.setAttribute("src",bodyImage.JS);
         break;
@@ -40,7 +39,6 @@ TitleArray.forEach ((TitleArrays) => {
         dataText = `${TitleArrays.React} project information`;
         bodyFormat.setAttribute("href",bodyTextAnchor.ReactText);
         bodyFormat.textContent = bodyText.ReactText;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.ReactText);
         bodyFormatGithub.textContent= bodyTextGithub.ReactText;
         bodyFormatImg.setAttribute("src",bodyImage.ReactText);
         break;
@@ -49,16 +47,15 @@ TitleArray.forEach ((TitleArrays) => {
         dataText = `${TitleArrays.Angular} project information`;
         bodyFormat.setAttribute("href",bodyTextAnchor.AngularText);
         bodyFormat.textContent = bodyText.AngularText;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.AngularText);
         bodyFormatGithub.textContent= bodyTextGithub.AngularText;
         bodyFormatImg.setAttribute("src",bodyImage.AngularText);
         break;
         case "Java App":
         bodyFormat.style.color = "black";
-        dataText = `${TitleArrays.Java} project information`;
+        dataText = `${ TitleArrays.Java } project information`;
+        bodyFormat.setAttribute("href",bodyTextAnchor.AngularText);
         bodyFormat.removeAttribute("href");
         bodyFormat.textContent = bodyText.Java;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.Java);
         bodyFormatGithub.textContent= bodyTextGithub.Java;
         bodyFormatImg.setAttribute("src",bodyImage.Java);
         break;

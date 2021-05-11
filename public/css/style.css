@@ -1,6 +1,16 @@
 /* import common variables */
 @import url(global_var.css);
+/*--- Loader CSS ---*/
+.loader-container {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+}
 
+
+/*--- End Loader CSS ---*/
 /*--- Header CSS ---*/
 .selector-for-some-widget {
   box-sizing: content-box;
@@ -49,6 +59,7 @@
 .site-main .site-banner {
   background: var(--bk_url) no-repeat;
   background-size: contain;
+  padding: 2rem 2rem 2rem 2rem;
 }
 .site-title{
   margin: auto;
@@ -132,7 +143,6 @@ font-size: 3rem;
       grid-template-columns: min-content max-content;
       margin-bottom: 10%;
       line-height: 1;
-      float: right;
   }
 
 
@@ -244,7 +254,7 @@ height: 100px !important;
 
 /* Start SECTION_2 AREA */
 .about-area{
-    margin-left: 1rem;
+    padding: 2rem 2rem 2rem 2rem;
     background: var(--bk_url_squares) 63% no-repeat ;
 }
 .about-title{
@@ -252,12 +262,14 @@ height: 100px !important;
 }
 .site-main .about-area .about-title .paragraph > p{
     padding: .4rem 0;
+    text-align: justify;
 }
 .about-image {
   float: right;
 }
 .paragraph.py-4 {
   margin-left: 40px;
+  width: clamp(200px, 90%, 600px);
 }
 /* End SECTION_2 AREA */
 
@@ -378,8 +390,13 @@ footer.footer-area .social h5{
 }
 
 footer.footer-area .social a > i{
-  font-size:22px;
-  padding: 2rem;
+  padding: 50px;
+  font-size: 35px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
   color: var(--border-color);
 }
 
@@ -392,6 +409,9 @@ footer.footer-area .social a:hover > i{
 
 @media only screen and (max-width: 780px){
 
+  footer.footer-area .social a > i{
+    padding: 35px;
+  }
 .img-fluid{
   display: block;
   margin: auto;
@@ -423,7 +443,7 @@ footer.footer-area .social a:hover > i{
 
   @media only screen and (max-width: 490px){
   
-    .intro__img {
+  .intro__img {
       min-width: 100px;
   }
   .intro_name {
@@ -442,6 +462,17 @@ footer.footer-area .social a:hover > i{
     padding: 0.8rem 1.2rem;
     font-size: 0.75rem;
   }
+
+  .h2, h2 {
+    font-size: calc(1.325rem);
+  }
+  }
+
+  @media only screen and (min-width: 992px){
+    .intro_name {
+      margin-right: 10px;
+    }
+
   }
 
   
