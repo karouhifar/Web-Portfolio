@@ -58,7 +58,7 @@
               <img src="img/kamyab-quality.jpeg" alt="Kamyab Rouhifar" class="img-fluid img-thumbnail intro__img">
             </div>
             <div class="site-buttons">
-              <div class="d-flex flex-row flex-wrap">
+              <div class="d-flex flex-row">
                 <button type="button" class="btn button primary-button mr-4" data-bs-toggle="modal"
                   data-bs-target="#module1">
                   Instant Contact
@@ -96,7 +96,7 @@
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item pb-3 d-flex align-items-center"><i
                           class="fa fa-phone-square text-primary f-56"></i><span style="padding-left: 10px;"> Phone:
-                          +1(647)302-6226</span></li>
+                          (647)302-6226</span></li>
                       <li class="list-group-item pt-3 d-flex align-items-center"><i
                           class="fa fa-envelope-square text-primary f-56"></i><span style="padding-left: 10px;">
                           E-mail:
@@ -132,8 +132,7 @@
                 aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <embed src="resume/Kamyab Rouhifar Resume.pdf#toolbar=0" type="application/pdf" width="100%"
-                height="600px" />
+              <embed src="resume/KamyabRouhifarResume.pdf" type="application/pdf" width="100%" height="600px" />
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
@@ -164,7 +163,7 @@
               <span>introduce</span>
               <span>myself</span>
             </h2>
-            <div class="paragraph py-4 w-75 gs_reveal">
+            <div class="paragraph py-4 gs_reveal">
               <p class="para">
                 My name is Kamyab Rouhifar I am web designer and developer.
               </p>
@@ -174,8 +173,8 @@
                 creating C++ application by retrieving data from MySQL database management system.
                 Mostly I create web application by using NodeJs as a backend and MongoDB as a database.
                 Last but not least, Most my web applications are hosting live by using Netlify, Heroku ,etc.
-                You can download my Resume for more details 😀 👇.
               </p>
+              <p><strong>You can download my Resume for more details 😀 👇.</strong></p>
             </div>
             <a href="resume/Kamyab Rouhifar Resume.pdf" download="Kamyab Rouhifar Resume">
               <button type="button" class="btn button primary-button text-uppercase">
@@ -195,7 +194,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center services-title gs_reveal2">
-            <h1 class="text-uppercase title-text">Programming experience</h1>
+            <h1 class="text-uppercase title-text">programming samples</h1>
             <p class="para">
               Here is some applications that I made so far.
             </p>
@@ -273,7 +272,7 @@
             <h1 class="text-uppercase title-text">Accomplished projects</h1>
             <p class="para">
               The slide show of successful projects. <b>More details please check
-                <code>'PROGRAMMING EXPERIENCE'</code>section.</b>
+                <code>'programming samples'</code>section.</b>
             </p>
 
           </div>
@@ -379,7 +378,6 @@
     integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
     crossorigin="anonymous"></script>
   {{!-- Swiper library --}}
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   {{!-- ScrollTrigger GSAP --}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
@@ -387,12 +385,12 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
-
+  {{!-- Animation JS Library --}}
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-  <!-- Custom JS file-->
+  <script src="js/preLoad.js"></script>
   <script>
     const tl = gsap.timeline({ defaults: { duration: 1, stagger: 0.7 } });
-    tl.from(".headerMain", { opacity: 0.1, x: -500 })
+    tl.from(".headerMain", { opacity: 0.1, x: -500, delay: 1 })
       .from(".banner-image > img", { opacity: 0.1, x: 500 }, '-=0.5')
       .from(".site-title", { opacity: 0.1, y: 500 }, '-=1')
   </script>
@@ -405,6 +403,7 @@
       $('.letter-animate div').attr("class", "letters-animate");
     });
   </script>
+
   <script src="js/scrollHeader.js"></script>
   <script src="js/swiper.js"></script>
   <script src="js/project-nodule.js"></script>

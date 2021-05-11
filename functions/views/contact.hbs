@@ -79,7 +79,7 @@
   <!-- Bootstrap JS file -->
   <script>
     const tl = gsap.timeline({ defaults: { duration: 1, stagger: 0.7 } });
-    tl.from(".headerMain", { opacity: 0.1, x: -500 })
+    tl.from(".headerMain", { opacity: 0.1, x: -500, delay: 1 })
       .from(".container-contact1", { y: 500, opacity: 0.1 }, '-=1');
   </script>
 
@@ -96,10 +96,12 @@
     crossorigin="anonymous"></script>
   <!-- tilt effect for jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-
+  {{!-- Animation JS Library --}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <!-- Custom JS file-->
   <script src="js/contact.js"></script>
+  <script src="js/preLoad.js"></script>
 </body>
 
 </html>
