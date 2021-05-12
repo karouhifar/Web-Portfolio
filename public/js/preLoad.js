@@ -1,4 +1,7 @@
- 
+$(document).ready(function ()
+{
+
+    
     function removeLoading () 
     {
         
@@ -23,3 +26,4 @@
     };
   
     removeLoading();
+});
