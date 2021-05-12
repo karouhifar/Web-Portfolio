@@ -260,8 +260,10 @@ font-size: 3rem;
 
 
   .intro__img {
+      grid-row:1;
       -ms-grid-row: 1;
       -ms-grid-row-span: 2;
+      grid-column:1;
       -ms-grid-column: 1;
       grid-area: img;
       min-width: 180px;
