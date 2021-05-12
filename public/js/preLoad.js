@@ -2,9 +2,9 @@ $(document).ready(function ()
 {
 
     
-    $(window).on("load", function ()
+    function removeLoading () 
     {
-        
+        alert(window.onload);
         anime.timeline({})
             .add({
                 targets: '.loader-container',
@@ -23,7 +23,7 @@ $(document).ready(function ()
               
             //   demo();
          
-    });
+    };
   
-
+    window.onload = removeLoading;
 });
