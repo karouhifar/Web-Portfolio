@@ -4,7 +4,7 @@ $(document).ready(function ()
     
     function removeLoading () 
     {
-        alert(window.onload);
+        
         anime.timeline({})
             .add({
                 targets: '.loader-container',
@@ -25,5 +25,5 @@ $(document).ready(function ()
          
     };
   
-    window.onload = removeLoading;
+    removeLoading();
 });
