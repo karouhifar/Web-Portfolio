@@ -25,7 +25,7 @@
   <!-- GSAP animation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
  {{!-- Animation JS Library --}}
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
@@ -394,7 +394,7 @@
  
   <script>
     const tl = gsap.timeline({ defaults: { duration: 1, stagger: 0.7 } });
-    tl.from(".headerMain", { opacity: 0.1, x: -500, delay: 1 })
+    tl.from(".headerMain", { opacity: 0.1, x: -500 })
       .from(".banner-image > img", { opacity: 0.1, y: 500 }, '-=0.5')
       .from(".site-title", { opacity: 0.1, y: 500 }, '-=1')
   </script>
