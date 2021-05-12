@@ -7,7 +7,7 @@ $(document).ready(function ()
         
         anime.timeline({})
             .add({
-                targets: '.loading',
+                targets: '.spinner-wrapper',
                 translateY: ["0", "-50%"],
                 opacity: [1, 0],
                 easing: "easeOutExpo",
@@ -22,7 +22,15 @@ $(document).ready(function ()
                 },
                 duration: 1000
             });
-          
+              async function demo() {
+                await new Promise(r => setTimeout(r, 5000));
+                let loaderContainer = document.querySelector('.loader-container');
+                loaderContainer.parentElement.removeChild(loaderContainer);
+              }
+              
+              demo();
+        
+ 
             
     });
   
