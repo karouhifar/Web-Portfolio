@@ -7,13 +7,6 @@ $(document).ready(function ()
         
         anime.timeline({})
             .add({
-                targets: '.spinner-wrapper',
-                translateY: ["0", "-50%"],
-                opacity: [1, 0],
-                easing: "easeOutExpo",
-                duration: 1000
-            })
-            .add({
                 targets: '.loader-container',
                 opacity: [1, 0],
                 easing: "easeOutExpo",
