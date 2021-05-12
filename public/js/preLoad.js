@@ -15,16 +15,14 @@ $(document).ready(function ()
                 },
                 duration: 1000
             });
-              async function demo() {
-                await new Promise(r => setTimeout(r, 5000));
-                let loaderContainer = document.querySelector('.loader-container');
-                loaderContainer.parentElement.removeChild(loaderContainer);
-              }
+            //   async function demo() {
+            //     await new Promise(r => setTimeout(r, 5000));
+            //     let loaderContainer = document.querySelector('.loader-container');
+            //     loaderContainer.parentElement.removeChild(loaderContainer);
+            //   }
               
-              demo();
-        
- 
-            
+            //   demo();
+         
     });
   
 
