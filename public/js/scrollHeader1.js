@@ -6,39 +6,39 @@ $(document).ready(function ()
        let currentScrollTop = window.pageYOffset || document.documentElement.scrollTop,
     isVisible = true;
 
-        function show(){
+        function show(dom1, dom2){
         if(!isVisible){
             TweenLite.to(".headerMain", 1, { y: "0%" }, 0);
+            dom1.style.width = "150px";
+            dom2.style.width= "auto";
+            dom2.style.position= "static";
             isVisible = true;
         }
         }
 
-        function hide(){
+        function hide(dom1 ,dom2){
         if(isVisible){
-            TweenLite.to(".headerMain", 1, { y: "-100%" }, 0);
+            dom1.style.width = "70px";
+            dom2.style.width= "100%";
+            dom2.style.position= "sticky";
+            dom2.style.top = 0;
+            dom2.style.zIndex = "1000";
             isVisible = false;
         }
         }
 
         window.addEventListener("scroll", () =>{
-
-            var newScrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            if (newScrollTop > currentScrollTop) {
-                hide();
-            } else if (newScrollTop < currentScrollTop) {
-                show();
-            }
-            currentScrollTop = newScrollTop;
-
-            console.log(  window.document.documentElement.scrollTop);
-            console.log(  window.document.documentElement.scrollHeight);    
-            console.log(  window.document.documentElement.offsetHeight);    
-            // let currentScroll = event.target.scrollTop;
-            // let HeightScroll = event.target.scrollHeight;
-            // let offsetHeight = window.offsetHeight;
-            // if (currentScroll + offsetHeight == HeightScroll) {
-            //   this.disable = false;
-            // }
+            let DOMHeader = document.querySelector(".headerMain");
+            let DOMImg = document.getElementById("imgLogo");
+            
+            console.log("1 => " + window.document.documentElement.scrollTop);
+            console.log("2 => " + window.document.documentElement.scrollHeight);    
+            console.log("3 => " + window.document.documentElement.offsetHeight);
+            if (DOMHeader.scrollHeight < window.document.documentElement.scrollTop)
+             hide(DOMImg, DOMHeader);
+            else 
+             show(DOMImg , DOMHeader);
+            
         });
 
         
@@ -119,9 +119,3 @@ tl.from(target.scrollPosition.y, {y:100, opacity:0, ease:"back.out(1.7)", durati
         duration: 600
         });
     });
-
-
-  
-      
-
- 

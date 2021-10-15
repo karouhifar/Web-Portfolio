@@ -80,7 +80,9 @@
   -webkit-box-sizing: content-box;
           box-sizing: content-box;
 }
-
+.headerMain{
+  z-index: 1000;
+}
 .headerMain .main-menu .nav-item .nav-link {
   font-family: var(--roboto);
   text-transform: uppercase;
@@ -389,7 +391,6 @@ height: 100px !important;
   -o-transition: box-shadow .7s ease;
   transition: box-shadow .7s ease;
   transition: box-shadow .7s ease, -webkit-box-shadow .7s ease;
-  cursor: pointer;
 }
 
 .site-main > .services-area .services:hover{

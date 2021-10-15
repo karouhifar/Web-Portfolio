@@ -8,28 +8,38 @@
   <title>Home</title>
   <!-- ico in the URL address bar and on bookmarks created by web browsers -->
   <link rel="icon" type="image/png" href="img/Kamyab.jpg" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" 
-  integrity="sha512-eeBbzvdY28BPYqEsAv4GU/Mv48zr7l0cI6yhWyqhgRoNG3sr+Q2Fr6751bA04Cw8SGUawtVZlugHm5H1GOU/TQ==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css"
+    integrity="sha512-eeBbzvdY28BPYqEsAv4GU/Mv48zr7l0cI6yhWyqhgRoNG3sr+Q2Fr6751bA04Cw8SGUawtVZlugHm5H1GOU/TQ=="
+    crossorigin="anonymous" />
   <!-- Bootstrap CSS file -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
 
 
-  
+
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
     crossorigin="anonymous"></script>
   <!-- fontAwesome file -->
   <script src="https://kit.fontawesome.com/b0db9e868b.js" crossorigin="anonymous"></script>
   <!-- Custom CSS file -->
   <link rel="stylesheet" href="css/style.css" />
-  
+
   <!-- GSAP animation -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
- {{!-- Animation JS Library --}}
+  {{!-- Animation JS Library --}}
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-  
-  
+
+
   <script src="js/preLoad.js"></script>
+  <style>
+    .btn-details {
+      position: absolute;
+      bottom: -45px;
+      margin: auto;
+      width: 55%;
+      left: 25%;
+    }
+  </style>
 </head>
 
 <body>
@@ -104,7 +114,7 @@
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item pb-3 d-flex align-items-center"><i
                           class="fa fa-phone-square text-primary f-56"></i><span style="padding-left: 10px;"> Phone:
-                          (647)302-6226</span></li>
+                          (437)984-5385</span></li>
                       <li class="list-group-item pt-3 d-flex align-items-center"><i
                           class="fa fa-envelope-square text-primary f-56"></i><span style="padding-left: 10px;">
                           E-mail:
@@ -113,8 +123,7 @@
                     </ul>
                   </div>
                   <div class="col-md-4 col-sm-12">
-                    <img
-                      src="https://cdn.pixabay.com/photo/2016/05/31/10/52/call-now-1426588_960_720.png"
+                    <img src="https://cdn.pixabay.com/photo/2016/05/31/10/52/call-now-1426588_960_720.png"
                       alt="contact-us" class="img-fluid">
                   </div>
                 </div>
@@ -176,11 +185,13 @@
                 My name is Kamyab Rouhifar I am web designer and developer.
               </p>
               <p class="para">
-              I know three languages such as English, Turkish, and Persian. 
-              I have two years of programming knowledge. 
-              I have created a C++ application by retrieving data from the MySQL database management system. 
-              Primarily I develop web applications by using NodeJs as a backend and MongoDB as a database. 
-              Last but not least, Most of my web applications are hosting live by using Netlify, Heroku, etc.
+                I know three languages such as English, Turkish, and Persian.
+                I have two years of programming knowledge.
+                I have created a C++, Angular application by retrieving data from the MySQL, MangoDB database management
+                system.
+                Primarily I develop web applications by using NodeJS, ASP.NET as a backend and MongoDB as a database.
+                Last but not least, Most of my web applications are hosting live by using Netlify, Heroku, Azure App
+                Services, etc.
               </p>
               <p><strong>You can download my Resume for more details 😀 👇.</strong></p>
             </div>
@@ -199,25 +210,18 @@
 
     <!-- START SECTION_3 AREA -->
     <section class="services-area gs_reveal2" id="scrollPosition2">
-      <div class="container">
-        <div class="row">
+      <div class="container-fluid">
+        <div class="row ">
           <div class="col-lg-12 text-center services-title gs_reveal2">
-            <h1 class="text-uppercase title-text">programming samples</h1>
-            <p class="para">
-              Here is some applications that I made so far.
-            </p>
-            <p>
-              <kbd><b>Please click each Icon to see more details.</b></kbd>
-            </p>
+            <h1 class="text-uppercase title-text">programming skills</h1>
           </div>
         </div>
-        <div class="container services-list">
-          <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-12 gs_reveal2">
-              <div class="services" data-bs-toggle="modal" data-bs-target="#projectModal"
-                data-bs-whatever="Angular App">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
+              <div class="services">
                 <div class="sevices-img text-center py-4">
-                  <img src="img/services/angular.svg" alt="Angular">
+                  <img src="img/services/angular-2.svg" alt="Angular">
                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title text-uppercase font-roboto">Angular App</h5>
@@ -227,10 +231,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 gs_reveal2">
-              <div class="services" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Java App">
+            <div class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
+              <div class="services">
                 <div class="sevices-img text-center py-4">
-                  <img src="img/services/java.svg" alt="Java">
+                  <img src="img/services/java-2.svg" alt="Java">
                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title text-uppercase font-roboto">Java App</h5>
@@ -240,10 +244,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 gs_reveal2">
-              <div class="services" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="React App">
+            <div class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
+              <div class="services">
                 <div class="sevices-img text-center py-4">
-                  <img src="img/services/react-native.svg" alt="react-native">
+                  <img src="img/services/react-2.svg" alt="React">
                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title text-uppercase font-roboto">React App</h5>
@@ -253,15 +257,28 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 gs_reveal2">
-              <div class="services" data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Nodejs App">
+            <div class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
+              <div class="services">
                 <div class="sevices-img text-center py-4">
-                  <img src="img/services/javascript.svg" alt="javascript">
+                  <img src="img/services/javascript-2.svg" alt="javascript">
                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title text-uppercase font-roboto">JavaScript App</h5>
                   <p class="card-text text-secondary">
                     Used NodeJS application, session cookie, Admin &amp; Regular users.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
+              <div class="services">
+                <div class="sevices-img text-center py-4">
+                  <img src="img/services/net-2.svg" alt="ASP.NET">
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-uppercase font-roboto">ASP.NET App</h5>
+                  <p class="card-text text-secondary">
+                    Used MVC convention pattern, Entity Manager,View Design model.
                   </p>
                 </div>
               </div>
@@ -294,29 +311,51 @@
                   <div class="details">
                     <div class="desc-details">
                       <h3>React App</h3>
-
                     </div>
                   </div>
+                  <button data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="React App"
+                    class="btn btn-primary btn-details">View Details</button>
+                </div>
+
+                <div class="swiper-slide" style="background-image:url(img/portfolio/Spotify.PNG)">
+                  <div class="details">
+                    <div class="desc-details">
+                      <h3>Java App</h3>
+                    </div>
+                  </div>
+                  <button data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Java App"
+                    class="btn btn-primary btn-details">View Details</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(img/portfolio/Spotify.PNG)">
                   <div class="details">
                     <div class="desc-details">
                       <h3>Angular App</h3>
-
                     </div>
                   </div>
+                  <button data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Angular App"
+                    class="btn btn-primary btn-details">View Details</button>
                 </div>
                 <div class="swiper-slide" style="background-image:url(img/portfolio/KamiB&B.PNG)">
                   <div class="details">
                     <div class="desc-details">
                       <h3>Nodejs App</h3>
-
                     </div>
                   </div>
+                  <button data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Nodejs App"
+                    class="btn btn-primary btn-details">View Details</button>
+                </div>
+                <div class="swiper-slide" style="background-image:url(img/portfolio/DotNet.png)">
+                  <div class="details">
+                    <div class="desc-details">
+                      <h3>ASP.NET App</h3>
+                    </div>
+                  </div>
+                  <button data-bs-toggle="modal" data-bs-target="#projectModal" data-bs-whatever="Nodejs App"
+                    class="btn btn-primary btn-details">View Details</button>
                 </div>
               </div>
+
               <!-- Add Pagination -->
-              <div class="swiper-pagination"></div>
 
               <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div>
@@ -391,7 +430,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
- 
+
   <script>
     const tl = gsap.timeline({ defaults: { duration: 1, stagger: 0.7 } });
     tl.from(".headerMain", { opacity: 0.1, x: -500 })
@@ -408,8 +447,8 @@
     });
   </script>
 
-  <script src="js/scrollHeader.js"></script>
-  <script src="js/swiper.js"></script>
+  <script src="js/scrollHeader1.js"></script>
+  <script src="js/swiper-new.js"></script>
   <script src="js/project-nodule.js"></script>
 </body>
 

@@ -1,5 +1,5 @@
 {{!-- Loading each pages for refreshing HTML DOM --}}
-<div class="loader-container  text-light text-uppercase"  onload="removeLoading()">
+<div class="loader-container  text-light text-uppercase" onload="removeLoading()">
     <div class="spinner-wrapper">
         <div class="spinner">
             <strong class="loading-text px-md-4 display-5">Loading...</strong>
@@ -8,11 +8,12 @@
     </div>
 </div>
 {{!-- ------------------------------------------- --}}
-<header class="headerMain">
+<header class="headerMain headerMainS">
     <div class="main-menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="/"><img src="img/logo.png" alt="logo" style="width: 150px" /></a>
+                <a class="navbar-brand" href="/"><img id="imgLogo" src="img/logo.png" alt="logo"
+                        style="width: 150px" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

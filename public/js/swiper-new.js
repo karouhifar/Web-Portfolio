@@ -4,6 +4,7 @@ var swiper = new Swiper('.swiper-container', {
     centeredSlides: true,
     slidesPerView: 'auto',
     initialSlide: 1,
+    autoplay: false,
     loop:true,
     coverflowEffect: {
       rotate: 50,
@@ -12,10 +13,7 @@ var swiper = new Swiper('.swiper-container', {
       modifier: 1,
       slideShadows: true,
     },
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+  
     pagination: {
       el: '.swiper-pagination',
       clickable: true

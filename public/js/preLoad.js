@@ -15,8 +15,8 @@ $(document).ready(function ()
                 },
                 duration: 1000
             });
-              async function demo() {
-                await new Promise(r => setTimeout(r, 5000));
+              async function demo() {   
+                await new Promise(r => setTimeout(r, 1000));
                 let loaderContainer = document.querySelector('.loader-container');
                 loaderContainer.parentElement.removeChild(loaderContainer);
               }
