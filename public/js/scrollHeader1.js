@@ -8,8 +8,9 @@ $(document).ready(function ()
 
         function show(dom1, dom2){
         if(!isVisible){
-            TweenLite.to(".headerMain", 1, { y: "0%" }, 0);
-            dom1.style.width = "150px";
+            let rule = CSSRulePlugin.getRule(".bg-light");
+            TweenLite.to(dom1, 1, {ease:Power1.easeInOut ,width:"150px"}, 0);
+            TweenLite.to(rule, 1, {backgroundColor: "#f8f9fa"}, 0);
             dom2.style.width= "auto";
             dom2.style.position= "static";
             isVisible = true;
@@ -18,22 +19,21 @@ $(document).ready(function ()
 
         function hide(dom1 ,dom2){
         if(isVisible){
-            dom1.style.width = "70px";
+            let rule = CSSRulePlugin.getRule(".bg-light");
+            TweenLite.to(dom1, 1, {width:"70px"}, 0);
+            TweenLite.to(rule, 1, {backgroundColor: "black"}, 0);
             dom2.style.width= "100%";
             dom2.style.position= "sticky";
             dom2.style.top = 0;
             dom2.style.zIndex = "1000";
             isVisible = false;
+
         }
         }
 
         window.addEventListener("scroll", () =>{
             let DOMHeader = document.querySelector(".headerMain");
             let DOMImg = document.getElementById("imgLogo");
-            
-            console.log("1 => " + window.document.documentElement.scrollTop);
-            console.log("2 => " + window.document.documentElement.scrollHeight);    
-            console.log("3 => " + window.document.documentElement.offsetHeight);
             if (DOMHeader.scrollHeight < window.document.documentElement.scrollTop)
              hide(DOMImg, DOMHeader);
             else 

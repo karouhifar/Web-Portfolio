@@ -83,8 +83,9 @@
 .headerMain{
   z-index: 1000;
 }
-.headerMain ::before{
+.headerMain::before{
   content: '';
+  position: relative;
 }
 .headerMain .main-menu .nav-item .nav-link {
   font-family: var(--roboto);
