@@ -27,7 +27,7 @@ $(document).ready(function ()
             TweenLite.to(dom1, 1, {filter:"brightness(0) invert(1)"}, 0);
             TweenLite.to(rule, 1, {backgroundColor: "black"}, 0);
             TweenLite.to(".nav-link", 1, {color:"white"}, 0);
-            TweenLite.to("#navbarNav", 1, {color:"white"}, 0);
+            TweenLite.to("#navbarID", 1, {filter:"brightness(0) invert(1)"}, 0);
             dom2.style.width= "100%";
             dom2.style.position= "sticky";
             dom2.style.top = 0;
