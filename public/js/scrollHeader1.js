@@ -48,10 +48,7 @@ $(document).ready(function ()
   
 //-------------------------------------------------------------------------------------------
 // --- scrolling main
-var path = window.location.pathname;
-var page = path.split('/').pop();
-console.log(page)
-if (page == "index") {
+
 
 
     gsap.registerPlugin(ScrollTrigger);
@@ -128,5 +125,5 @@ if (page == "index") {
             easing: "easeOutExpo",
             duration: 600
             });
-        }
+
         });
