@@ -3,7 +3,8 @@ const express = require("express");
 const expHBS = require("express-handlebars");
 const cors = require('cors');
 const path = require("path");
-const http = require('http')
+const http = require('http');
+const { error } = require("jquery");
 const app = express();
 
 //  const HTTP_PORT = process.env.PORT || 9000;
@@ -56,7 +57,7 @@ app.get('/about', function(req, res) {
     
 });
 app.use((req, res) => {
-    res.status(404).send("Page Not Found");
+    res.status(404).render('error',{ layout: false});
   });
 
 
