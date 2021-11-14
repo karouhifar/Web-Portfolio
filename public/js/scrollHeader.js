@@ -13,7 +13,7 @@ $(document).ready(function ()
             TweenLite.to(dom1, 1, {ease:Power1.easeInOut, filter:"none"}, 0);
             TweenLite.to(rule, 1, {backgroundColor: "#f8f9fa"}, 0);
             TweenLite.to(".nav-link", 1, {color:"#141313"}, 0);
-            TweenLite.to("#navbarNav", 1, {color:"#141313"}, 0);
+            TweenLite.to("#navbarID", 1, {ease:Power1.easeInOut,filter:"none"}, 0);
             dom2.style.width= "auto";
             dom2.style.position= "static";
             isVisible = true;
