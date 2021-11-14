@@ -71,7 +71,7 @@ $(document).ready(function ()
         start:"6% 90%", // Start Scroll event
         end:"bottom 25%", // End Scroll event
         // events : OnEnter  OnLeave  OnEnterBack  OnLeaveBack
-        toggleActions: "restart none none reverse"
+        toggleActions: "play complete none none"
         }
     });
 
@@ -121,6 +121,11 @@ $(document).ready(function ()
             easing: "easeOutExpo",
             duration: 600,
             offset: '-=600'
-            });
+            }).add({
+                targets: '.animate-text  .line',
+                opacity: [1,0],
+                easing: "easeOutExpo",
+                duration: 600
+                });
 
         });
