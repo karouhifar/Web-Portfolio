@@ -15,12 +15,11 @@ var bodyFormatGithub = document.querySelector('.model-info-project-github');
 
 
 
-
-TitleArray = [{React:"React", Angular:"Angular", JS:"JavaScript", Java:"Java"}];
-bodyTextAnchor = {ReactText:"https://kamyabreactrestaurant.netlify.app",AngularText:"https://kamyab-spotify.vercel.app/", JS:"https://fast-castle-87951.herokuapp.com", Java:"N/A"};
+TitleArray = [{React:"React", Angular:"Angular", JS:"JavaScript", Java:"Java", DotNet:"ASP.Net"}];
+bodyTextAnchor = {ReactText:"https://kamyabreactrestaurant.netlify.app",AngularText:"https://kamyab-spotify.vercel.app/", JS:"https://fast-castle-87951.herokuapp.com", Java:"N/A",DotNet:"http://www.invoiceline.somee.com/"};
 bodyTextGithub = {ReactText:"https://github.com/krouhifar/ReactRestaurantAPI",AngularText:"https://github.com/krouhifar/web422-a6", JS:"https://github.com/krouhifar/Final-Web322", Java:"https://github.com/krouhifar/JavaFX-Serialization"};
-bodyText = {ReactText:"Click React app",AngularText:"Click Angular app", JS:"Click Vanilla JavaScript", Java:"N/A No live server"};
-bodyImage = {ReactText:"img/portfolio/Restaurant.PNG",AngularText:"img/portfolio/Spotify.PNG", JS:"img/portfolio/KamiB&B.PNG", Java:"img/portfolio/Deserialization_1.JPG"};
+bodyText = {ReactText:"Click React app",AngularText:"Click Angular app", JS:"Click Vanilla JavaScript", Java:"N/A No live server",DotNet:"Click ASP.NET"};
+bodyImage = {ReactText:"img/portfolio/Restaurant.PNG",AngularText:"img/portfolio/Spotify.PNG", JS:"img/portfolio/KamiB&B.PNG", Java:"img/portfolio/Deserialization_1.JPG",DotNet:"img/portfolio/DotNet.png"};
 
 bodyFormat.style.textDecoration = "none";
 
@@ -61,6 +60,15 @@ TitleArray.forEach ((TitleArrays) => {
         bodyFormatGithub.setAttribute("href",bodyTextGithub.Java); 
         bodyFormatGithub.textContent= bodyTextGithub.Java;
         bodyFormatImg.setAttribute("src",bodyImage.Java);
+        break;
+        case "Net App":
+            bodyFormat.style.color = "blue";
+            dataText = `${TitleArrays.DotNet} project information`;
+            bodyFormat.setAttribute("href",bodyTextAnchor.AngularText);
+            bodyFormat.textContent = bodyText.AngularText;
+            bodyFormatGithub.setAttribute("href",bodyTextGithub.AngularText); 
+            bodyFormatGithub.textContent= bodyTextGithub.AngularText;
+            bodyFormatImg.setAttribute("src",bodyImage.AngularText);
         break;
     }
 })
