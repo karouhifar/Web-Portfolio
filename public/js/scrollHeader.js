@@ -121,11 +121,6 @@ $(document).ready(function ()
             easing: "easeOutExpo",
             duration: 600,
             offset: '-=600'
-            }).add({
-            targets: '.animate-text  .line',
-            opacity: [1,0],
-            easing: "easeOutExpo",
-            duration: 600
             });
 
         });
