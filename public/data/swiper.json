@@ -1,0 +1,128 @@
+[
+  {
+    "name": "Artist Wiki Application",
+    "src": "img/portfolio/DotNet.png",
+    "url": "https://krouhifar-wa-web524-a6.azurewebsites.net",
+    "description": [
+      { "name": "Make role claims", "logo": "fas fa-user" },
+
+      {
+        "name": "Authenticated user to access data",
+        "logo": "fas fa-lock"
+      },
+
+      { "name": "To-many association", "logo": "fas fa-project-diagram" },
+      { "name": "Azure web app hosting", "logo": "fas fa-globe-americas" }
+    ],
+    "techSrc": [
+      "https://geeks.ms/clanderas/wp-content/uploads/sites/275/2016/10/asp_net.png",
+      "https://i.pinimg.com/originals/be/d3/0d/bed30ddfa5d434e827c775ac9a3b0d38.jpg",
+      "https://external-preview.redd.it/bS0gp46h0kZbUPSYmNqb8x3oBW4Vp9MRMzK6eb4wl7Q.jpg?auto=webp&s=3e43a464c2b169288ee8b0abd5201ca547356f79",
+      "https://seeklogo.com/images/C/c-sharp-c-logo-02F17714BA-seeklogo.com.png",
+      "https://rnd-solutions.net/wp-content/uploads/2018/06/azure-icon-250x250.png"
+    ]
+  },
+  {
+    "name": "DoubleClick Lending",
+    "src": "img/portfolio/DoubleClickLending.png",
+    "url": "https://www.doubleclicklending.com/",
+    "description": [
+      {
+        "name": "Admin, borrower, lender authorization",
+        "logo": "fas fa-user-lock"
+      },
+
+      {
+        "name": "REST APIs to render maps vectors",
+        "logo": "fas fa-map-marker-alt"
+      },
+
+      { "name": "Mobile-friendly website design", "logo": "fas fa-mobile-alt" },
+      {
+        "name": "Azure DevOps development life cycle",
+        "logo": "fas fa-sync"
+      }
+    ],
+    "techSrc": [
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
+      "https://miro.medium.com/max/816/1*TpbxEQy4ckB-g31PwUQPlg.png",
+      "https://user-images.githubusercontent.com/1874103/46415699-cfc5cf00-c6f3-11e8-9bcc-2fc2bf1759ec.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png",
+      "https://www.seekpng.com/png/full/377-3772047_sass-logo.png"
+    ]
+  },
+  {
+    "name": "Covid-19 Tracker Website",
+    "src": "img/portfolio/covid-19.png",
+    "url": "https://covid19-track.web.app/",
+    "description": [
+      { "name": "React component developing", "logo": "fab fa-react" },
+
+      {
+        "name": "Track covid-19 API cases globally",
+        "logo": "fas fa-virus"
+      },
+
+      { "name": "Diagram features building", "logo": "fas fa-chart-pie" }
+    ],
+    "techSrc": [
+      "https://cdn.freebiesupply.com/logos/large/2x/react-logo-png-transparent.png",
+      "https://www.computerhope.com/jargon/j/javascript.png",
+      "https://img.stackshare.io/service/1904/default_44d81cb9fadbc3688b7e91a6d5217d0ea5358b57.png",
+      "https://avatars.slack-edge.com/2021-02-11/1743993243810_70c06a3b9201ba9e34c1_512.png",
+      "https://app.ellipsis-drive.com/images/plugins/leaflet.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png"
+    ]
+  },
+  {
+    "name": "House renting list website",
+    "src": "img/portfolio/KamiB&B.png",
+    "url": "https://fast-castle-87951.herokuapp.com/",
+    "description": [
+      {
+        "name": "Generate requested handlebars pages",
+        "logo": "fas fa-at"
+      },
+
+      {
+        "name": "Relational model of database system",
+        "logo": "fas fa-database"
+      },
+
+      {
+        "name": "Browser HTTP cookie-session management",
+        "logo": "fas fa-cookie-bite"
+      }
+    ],
+    "techSrc": [
+      "https://www.computerhope.com/jargon/j/javascript.png",
+      "http://www.newthinktank.com/wp-content/uploads/2015/10/Handlebars-Tutorial.png",
+      "https://developers.redhat.com/blog/wp-content/uploads/2020/05/nodejs-new-pantone-black.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNL45P6szU8KZizfhBx11BrEXZfTAuX7MmpS7mXmkhkMeDkOUGMbVzn7z-WVpwsnvEOI&usqp=CAU",
+      "https://pbs.twimg.com/profile_images/689189555765784576/3wgIDj3j_400x400.png"
+    ]
+  },
+  {
+    "name": "Music store application",
+    "src": "img/portfolio/spotify.png",
+    "url": "https://kamyab-spotify.vercel.app/login",
+    "description": [
+      { "name": "Angular component developing", "logo": "fab fa-angular" },
+
+      {
+        "name": "NoSQL database feature building",
+        "logo": "fas fa-database"
+      },
+
+      { "name": "JavaScript node server building", "logo": "fab fa-node-js" }
+    ],
+    "techSrc": [
+      "https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg",
+      "https://miro.medium.com/max/816/1*TpbxEQy4ckB-g31PwUQPlg.png",
+      "https://community.appian.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-50/logo.png",
+      "https://pbs.twimg.com/profile_images/689189555765784576/3wgIDj3j_400x400.png",
+      "https://www.pngitem.com/pimgs/m/385-3850320_png-transparent-mongodb-icon-mongodb-logo-png-download.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Git_icon.svg/1024px-Git_icon.svg.png"
+    ]
+  }
+]

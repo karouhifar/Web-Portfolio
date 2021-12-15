@@ -1,82 +1,98 @@
 // Showing the project details in module
 
-$( document ).ready(function() {
+$(document).ready(function () {
+  fetch("/data/swiper.json")
+    .then((Response) => Response.json())
+    .then((names) => {
+      let motherSwiper = $(".swiper-wrapper");
+      let animeData;
+      names.forEach((n) => {
+        let childDiv = $("<div></div>").attr("class", "swiper-slide");
+        childDiv.css("background-image", `url(${n.src})`);
+        motherSwiper.append(childDiv);
+        let childDiv2 = $("<div></div>").attr("class", "details");
+        childDiv.append(childDiv2);
+        let childDiv3 = $(`<a href=${n.url} target="_blank"></a>`).attr(
+          "class",
+          "desc-details"
+        );
+        let childDiv4 = $("<div></div>").attr("class", "desc-lists");
+        childDiv2.append(childDiv3);
+        let text = $("<span></span>")
+          .text(n.name)
+          .css("color", "rgb(255, 255, 255)");
+        childDiv3.append(text);
+        childDiv2.append(childDiv4);
+        let childDiv5 = $("<div></div>").attr("class", "slideLists");
 
-var exampleModal = document.getElementById('projectModal');
+        childDiv4.append(childDiv5);
+        let childDiv6 = $("<div class='TechnologiesSlide'></div>");
+        childDiv6.html("<h5>Technologies: </h5>");
+        n.techSrc.forEach((src) => {
+          childDiv6.append(`<img src=${src} alt=${n.name} width='50' />`);
+        });
+        let childDiv7 = $("<div class='TaskCompleted'></div>");
+        childDiv7.html("<h5>Completed Tasks: </h5>");
 
-exampleModal.addEventListener('show.bs.modal', function (event) {
-
-var button = event.relatedTarget;
-
-var recipient = button.getAttribute('data-bs-whatever');
-var bodyFormat = document.querySelector('.model-info-project');
-var bodyFormatImg = document.querySelector('.model-img-project');
-var bodyFormatGithub = document.querySelector('.model-info-project-github');
-
-
-
-TitleArray = [{React:"React", Angular:"Angular", JS:"JavaScript", Java:"Java", DotNet:"ASP.Net"}];
-bodyTextAnchor = {ReactText:"https://kamyabreactrestaurant.netlify.app",AngularText:"https://kamyab-spotify.vercel.app/", JS:"https://fast-castle-87951.herokuapp.com", Java:"N/A",DotNet:"http://www.invoiceline.somee.com/"};
-bodyTextGithub = {ReactText:"https://github.com/krouhifar/ReactRestaurantAPI",AngularText:"https://github.com/krouhifar/web422-a6", JS:"https://github.com/krouhifar/Final-Web322", Java:"https://github.com/krouhifar/JavaFX-Serialization"};
-bodyText = {ReactText:"Click React app",AngularText:"Click Angular app", JS:"Click Vanilla JavaScript", Java:"N/A No live server",DotNet:"Click ASP.NET"};
-bodyImage = {ReactText:"img/portfolio/Restaurant.PNG",AngularText:"img/portfolio/Spotify.PNG", JS:"img/portfolio/KamiB&B.PNG", Java:"img/portfolio/Deserialization_1.JPG",DotNet:"img/portfolio/DotNet.png"};
-
-bodyFormat.style.textDecoration = "none";
-
-TitleArray.forEach ((TitleArrays) => {
-    switch (recipient) {
-        case "Nodejs App":
-        bodyFormat.style.color = "blue";
-        dataText = `${TitleArrays.JS} project information`;
-        bodyFormat.setAttribute("href",bodyTextAnchor.JS);
-        bodyFormat.textContent = bodyText.JS;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.JS);
-        bodyFormatGithub.textContent = bodyTextGithub.JS;  
-        bodyFormatImg.setAttribute("src",bodyImage.JS);
-        break;
-        case "React App":
-        bodyFormat.style.color = "blue";    
-        dataText = `${TitleArrays.React} project information`;
-        bodyFormat.setAttribute("href",bodyTextAnchor.ReactText);
-        bodyFormat.textContent = bodyText.ReactText;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.ReactText);
-        bodyFormatGithub.textContent= bodyTextGithub.ReactText;
-        bodyFormatImg.setAttribute("src",bodyImage.ReactText);
-        break;
-        case "Angular App":
-        bodyFormat.style.color = "blue";
-        dataText = `${TitleArrays.Angular} project information`;
-        bodyFormat.setAttribute("href",bodyTextAnchor.AngularText);
-        bodyFormat.textContent = bodyText.AngularText;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.AngularText); 
-        bodyFormatGithub.textContent= bodyTextGithub.AngularText;
-        bodyFormatImg.setAttribute("src",bodyImage.AngularText);
-        break;
-        case "Java App":
-        bodyFormat.style.color = "black";
-        dataText = `${ TitleArrays.Java } project information`;
-        bodyFormat.removeAttribute("href");
-        bodyFormat.textContent = bodyText.Java;
-        bodyFormatGithub.setAttribute("href",bodyTextGithub.Java); 
-        bodyFormatGithub.textContent= bodyTextGithub.Java;
-        bodyFormatImg.setAttribute("src",bodyImage.Java);
-        break;
-        case "Net App":
-            bodyFormat.style.color = "blue";
-            dataText = `${TitleArrays.DotNet} project information`;
-            bodyFormat.setAttribute("href",bodyTextAnchor.AngularText);
-            bodyFormat.textContent = bodyText.AngularText;
-            bodyFormatGithub.setAttribute("href",bodyTextGithub.AngularText); 
-            bodyFormatGithub.textContent= bodyTextGithub.AngularText;
-            bodyFormatImg.setAttribute("src",bodyImage.AngularText);
-        break;
-    }
-})
-
-var modalTitle = exampleModal.querySelector('.modal-title');
-var modalBody = exampleModal.querySelector('.modal-body');
-
-modalTitle.textContent =  dataText;
-modalBody
-})
+        childDiv5.append(childDiv6);
+        n.description.forEach((desc) => {
+          childDiv7.append(
+            `<div class='spanSlide'><i class="${desc.logo}"></i><span>${desc.name}</span></div>`
+          );
+        });
+        childDiv5.append(childDiv7);
+        childDiv.hover(
+          () => {
+            animeData = null;
+            childDiv4.css("display", `block`);
+            animeData = anime
+              .timeline({ duration: 1100 })
+              .add({
+                targets: childDiv2[0],
+                height: "100%",
+              })
+              .add(
+                {
+                  targets: childDiv3[0],
+                  backgroundColor: "#FFF",
+                  width: "60%",
+                  borderRadius: "10px",
+                },
+                "-=1000"
+              )
+              .add(
+                {
+                  targets: text[0],
+                  color: "#000",
+                },
+                "-=1000"
+              )
+              .add(
+                {
+                  targets: childDiv4[0],
+                  opacity: 1,
+                },
+                "-=500"
+              );
+          },
+          () => {
+            anime
+              .timeline({ duration: 1000 })
+              .add({
+                targets: childDiv2[0],
+                height: "15%",
+              })
+              .add(
+                {
+                  targets: text[0],
+                  color: "#FFF",
+                },
+                "-=1000"
+              );
+            animeData.restart();
+            animeData.pause();
+          }
+        );
+      });
+    });
 });
