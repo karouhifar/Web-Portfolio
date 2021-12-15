@@ -104,7 +104,7 @@
   },
   {
     "name": "Music store application",
-    "src": "img/portfolio/spotify.png",
+    "src": "img/portfolio/music.png",
     "url": "https://kamyab-spotify.vercel.app/login",
     "description": [
       { "name": "Angular component developing", "logo": "fab fa-angular" },
