@@ -651,8 +651,12 @@ footer.footer-area .social a:hover > i{
   .details .desc-details h3{
   margin: 0px 10px 0 10px;
   }
-
-
+  .paragraph.py-4 {
+    margin-left: 0 !important;
+  }
+  .site-main .projects-slider{
+    padding: 0 !important;
+  }
  
 }
 
