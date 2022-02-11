@@ -75,34 +75,6 @@
     ]
   },
   {
-    "name": "House renting list website",
-    "src": "img/portfolio/KamiB&B.png",
-    "url": "https://fast-castle-87951.herokuapp.com/",
-    "description": [
-      {
-        "name": "Generate requested handlebars pages",
-        "logo": "fas fa-at"
-      },
-
-      {
-        "name": "Relational model of database system",
-        "logo": "fas fa-database"
-      },
-
-      {
-        "name": "Browser HTTP cookie-session management",
-        "logo": "fas fa-cookie-bite"
-      }
-    ],
-    "techSrc": [
-      "https://www.computerhope.com/jargon/j/javascript.png",
-      "http://www.newthinktank.com/wp-content/uploads/2015/10/Handlebars-Tutorial.png",
-      "https://developers.redhat.com/blog/wp-content/uploads/2020/05/nodejs-new-pantone-black.png",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMNL45P6szU8KZizfhBx11BrEXZfTAuX7MmpS7mXmkhkMeDkOUGMbVzn7z-WVpwsnvEOI&usqp=CAU",
-      "https://pbs.twimg.com/profile_images/689189555765784576/3wgIDj3j_400x400.png"
-    ]
-  },
-  {
     "name": "Music store application",
     "src": "img/portfolio/music.png",
     "url": "https://kamyab-spotify.vercel.app/login",

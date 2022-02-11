@@ -69,7 +69,7 @@
                 </p>
               </div>
 
-              <img src="img/kamyab-quality.jpeg" alt="Kamyab Rouhifar" class="img-fluid img-thumbnail intro__img">
+              <img src="https://avatars.githubusercontent.com/u/54970142?v=4" alt="Kamyab Rouhifar" class="img-fluid img-thumbnail intro__img">
             </div>
             <div class="site-buttons">
               <div class="d-flex flex-row">
@@ -77,10 +77,11 @@
                   data-bs-target="#module1">
                   Instant Contact
                 </button>
-                <button type="button" class="btn button secondary-button" data-bs-toggle="modal"
-                  data-bs-target="#module2">
-                  Get CV / Resume
+                <a href="#project_list">
+                <button type="button" class="btn button secondary-button">
+                  Go to projects
                 </button>
+                </a>
               </div>
             </div>
           </div>
@@ -176,69 +177,36 @@
               <span>introduce</span>
               <span>myself</span>
             </h2>
-            <div class="paragraph py-4 gs_reveal">
-              <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                      About me
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p class="para">
-                        My name is Kamyab Rouhifar I am web designer and developer. <br />
-                        Having speaking skill of English, Turkish, Persian, and Spanish languages.
-                      </p>
-                    </div>
-                  </div>
+            <div style="background: rgb(255 255 255);" class="paragraph py-4 gs_reveal">
+             
+              <div class="info__border">
+                <p>Introduction</p>
+                <p class="para">
+                  Hey, I’m Kamyab. I love everything related to web development.
+                </p> 
+              </div>
+              <div class="info__border">
+                 <p>Skills</p>
+                <div class="para">
+                  Here are some of the highlights of my web development journey:
+                  <ul>
+                    <li>Having more than two years of web programming experience.</li>
+                    <li>Developing a web-based mortgage property application for DoubleClick Lending.</li>
+                    <li>Getting proficient at ReactJS and Angular front-end frameworks.</li>
+                    <li>Mastering NodeJS, ASP.NET, Django back-end frameworks.</li>
+                  </ul>
                 </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      My skills
-                    </button>
-                  </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p class="para">
-                        <ul>
-                          <li>I have more than two years of programming knowledge experience.</li>
-                          <li>I have implement projects including web-platform mortgage application.</li>
-                          <li>I work in business area to satisfy the company management.</li>
-                          <li>I have experience of working modern Front-end developing such as ReactJS,Angular</li>
-                          <li>I have experience of working Back-end developing such as NodeJS, ASP.NET, Django
-                            frameworks</li>
-                        </ul>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
-                      Hobbies
-                    </button>
-                  </h2>
-                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                      <p class="para">
-                        I like to do roller skate &#128764; in my free times. and I love to hang out with my friend and people
-                        knowing each other well.
-                        Sometimes It is good for being in shape so I am ready for do som gym exercises &#9977; &#128170; in my free times.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p><strong>You can download my Resume for more details <strong>&#128512; &#128071;</strong>.</strong>
+              </div>
+              <div class="info__border">
+                 <p>Hobbies</p>
+                <p class="para">
+                  When I am not coding, I learn new languages, go to the gym, and roller skate.
+                  I am advanced in Persian and Turkish. I am also learning Spanish at the moment.
                 </p>
               </div>
+              <p><strong>You can download my Resume for more details <strong>&#128512; &#128071;</strong>.</strong>
+              </p>
+
               <a href="resume/KamyabRouhifarResume.pdf" download="Kamyab Rouhifar Resume">
                 <button type="button" class="btn button primary-button text-uppercase">
                   <i class="fa fa-download"></i> Download cv / Resume
@@ -315,14 +283,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
+            <div id="project_list" class="col-lg-4 col-md-6 col-sm-12 gs_reveal2 d-flex justify-content-center">
               <div class="services">
                 <div class="sevices-img text-center py-4">
                   <img src="img/services/net-2.svg" alt="ASP.NET">
                 </div>
                 <div class="card-body text-center">
                   <h5 class="card-title text-uppercase font-roboto">ASP.NET App</h5>
-                  <p class="card-text text-secondary">
+                  <p  class="card-text text-secondary">
                     Used MVC convention pattern, Entity Manager,View Design model.
                   </p>
                 </div>
@@ -335,15 +303,12 @@
     <!-- END SECTION_3 AREA -->
     <!-- Start SECTION_4 AREA -->
 
-    <section class="projects-slider  gs_reveal3" id="scrollPosition3">
+    <section  class="projects-slider  gs_reveal3" id="scrollPosition3">
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center project-title">
-            <h1 class="text-uppercase title-text">Accomplished projects</h1>
-            <p class="para">
-              The slide show of successful projects. <b>More details please check
-                <code>'programming samples'</code>section.</b>
-            </p>
+            <h1  class="text-uppercase title-text">my projects</h1>
+
 
           </div>
         </div>

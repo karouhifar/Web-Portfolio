@@ -366,9 +366,29 @@ height: 100px !important;
   float: right;
 }
 .paragraph.py-4 {
-  margin-left: 40px;
-  width: clamp(200px, 90%, 600px);
+  width: clamp(200px, 100%, 800px);
 }
+.info__border{
+  border: #353131 solid 4px;
+  margin: 1% auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.info__border > p:nth-child(1){
+  border-bottom: #353131 solid 2px;
+  background-color: #353131;
+  font-family: var(--Coda);
+  color: #fff;
+  margin-top: -1px;
+  padding: 5px 10px;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+}
+.info__border .para{
+  padding: 0 10px;
+}
+
 .accordion-item, .accordion-button{
   background: #fff !important;
   padding: 0% !important;
