@@ -4,7 +4,7 @@ $(document).ready(function () {
     grabCursor: false,
     centeredSlides: true,
     slidesPerView: "auto",
-    initialSlide: 1,
+    initialSlide: 2,
     autoplay: false,
     loop: false,
     autoHeight: false,

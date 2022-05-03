@@ -23,6 +23,35 @@
     ]
   },
   {
+    "name": "Kami store application",
+    "src": "img/portfolio/kamiStore.png",
+    "url": "https://kamistore-60f52.web.app/",
+    "description": [
+      {
+        "name": "JSON WEB TOKEN Authentication",
+        "logo": "fa-solid fa-lock"
+      },
+
+      {
+        "name": "React/Redux State management system",
+        "logo": "fa-brands fa-react"
+      },
+
+      {
+        "name": "ASP.NET Core Entity Framework API",
+        "logo": "fa-solid fa-globe"
+      }
+    ],
+    "techSrc": [
+      "https://geeks.ms/clanderas/wp-content/uploads/sites/275/2016/10/asp_net.png",
+      "https://cdn.freebiesupply.com/logos/large/2x/react-logo-png-transparent.png",
+      "https://community.appian.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-50/logo.png",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbDn-_kLAcnntK415Ct2XJd9Uz6A74Qs6LkvcoS6GNWzG-0zsBTBS1EUTYdJXXJn-JnqQ&usqp=CAU",
+      "https://img.portalgsti.com.br/OcsHhsi42lFfKiWbY9GVTDliHi8=/200x200/https://www.portalgsti.com.br/media/uploads/community/2016/04/25/sqlite.png",
+      "https://rnd-solutions.net/wp-content/uploads/2018/06/azure-icon-250x250.png"
+    ]
+  },
+  {
     "name": "DoubleClick Lending",
     "src": "img/portfolio/DoubleClickLending.png",
     "url": "https://www.doubleclicklending.com/",
