@@ -64,6 +64,6 @@ app.use((req, res) => {
 });
 // TODO
 // Run server using NodeJS localhost:9000
-app.listen(HTTP_PORT, () => console.log("listen to " + HTTP_PORT));
+// app.listen(HTTP_PORT, () => console.log("listen to " + HTTP_PORT));
 // Run server using Firebase severless function
-// exports.app = functions.https.onRequest(app);
+exports.app = functions.https.onRequest(app);
