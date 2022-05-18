@@ -1,6 +1,13 @@
 /* import common variables */
 @import url(./global_var.css);
 
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/bg_contact.png");
+  background-attachment: fixed;
+}
+
 /*---------------------------------------------*/
 input {
 	outline: none;
@@ -48,9 +55,6 @@ iframe {
   min-height: 100%;
   padding: 15px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url("../img/bg_contact.png");
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
