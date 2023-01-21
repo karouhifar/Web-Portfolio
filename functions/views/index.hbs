@@ -20,6 +20,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
          integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
          crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!-- fontAwesome file anime icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css" integrity="sha512-Po8rrCwchD03Wo+2ibHFielZ8luDAVoCyE9i6iFMPyn9+V1tIhGk5wl8iKC9/JfDah5Oe9nV8QzE8HHgjgzp3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Custom CSS file -->
       <link rel="stylesheet" href="css/style-new.css" />
       <!-- GSAP animation -->
@@ -57,10 +59,10 @@
                                  Hi, I am
                               </div>
                               <div class="letter-whole-animate" style="align-self: flex-end;">
-                                    <p class="letter-animate">Kamyab Rouhifar</p>
+                                    <p class="letter-animate" style="white-space: nowrap;">Kamyab Rouhifar</p>
                                  </div>
                               <div class="subtitle-text subtitle-text--intro bg-dark">
-                                 <p class="animate-text">
+                                 <p class="animate-text" style="white-space: nowrap;">
                                     <span class="text-wrapper">
                                     <span class="line line1"></span>
                                     <span class="letters letters-left">FULLSTACK</span>
@@ -84,7 +86,7 @@
                               data-bs-target="#module1">
                            Instant Contact
                            </button>
-                           <a href="#project_list">
+                           <a onclick="scrollToTarget('projects')">
                            <button type="button" class="btn button secondary-button">
                            Go to projects
                            </button>
@@ -168,43 +170,104 @@
                <div class="container">
                   <div class="row">
                      <div class="col-lg-12 text-center project-title">
-                        <h1  class="text-uppercase title-text mb-5">my projects</h1>
+                        <h1 class="text-uppercase title-text my-5">my projects</h1>
                      </div>
                   </div>
-                  <div class="row">
+                  <div class="row" id="projectList">
                      <div class="col-12 gs_reveal3">
                         <div class="card border-0 mb-3">
-                        <div class="row g-0">
-                           <div class="col-md-4">
-                              <img width="100%" src="img/portfolio/kamiStore.png"  alt="...">
-                           </div>
-                           <div class="col-md-8">
-                              <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           <div class="row g-0" style="align-items: center;">
+                              <div class="col-md-4" style="cursor: pointer;" onclick="goToLink('https://mediakits.dev.vnplatform.com/profile/LeoMessi')">
+                                 <img width="100%" src="img/portfolio/mediakits.png"  alt="kamiStore">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                 <h5 id="fa-chevron-right" class="card-title" style="cursor: pointer;" onclick="goToLink('https://mediakits.dev.vnplatform.com/profile/LeoMessi')">MediaKits <i class="fa-solid fa-chevron-right"></i></h5>
+                                 <p class="card-text">technologies used 
+                                    <img width="40px" src="https://cdn.freebiesupply.com/logos/large/2x/react-logo-png-transparent.png" alt="react"/>
+                                    <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png" alt="GraphQL_Logo"/>
+                                    <img width="40px" src="https://miro.medium.com/max/816/1*TpbxEQy4ckB-g31PwUQPlg.png" alt="TypeScript"/>
+                                    <img width="40px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbDn-_kLAcnntK415Ct2XJd9Uz6A74Qs6LkvcoS6GNWzG-0zsBTBS1EUTYdJXXJn-JnqQ&usqp=CAU" alt="Redux"/>
+                                    <img width="40px" src="https://dl2.macupdate.com/images/icons256/60968.png?time=1663919426" alt="pgadmin"/>
+                                    <img width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/1200px-Node.js_logo.svg.png" alt="node"/>
+                                 
+                                 </p>
+                                 <div class="p-3 mb-2 text-dark rounded" style="background-color: #efefef">
+                                    <p class="card-text"><small class="text-muted">A media kit is a collection of promotional materials that is used to provide information about a organization or influencer to the media. 
+                                       It typically includes information such as company background, key contacts, press releases,
+                                        product or service descriptions, and high-resolution images or videos. 
+                                        Media kits are often used by public relations professionals,marketers ,and influencer to promote their company or brand to the media, and to provide journalists and other members of the media with the information 
+                                        they need to write stories or create content about the company or brand. </small></p> 
+                                 </div>
+                                   <a href="https://mediakits.dev.vnplatform.com/profile/LeoMessi">MediaKits</a>
+                                 </div>
                               </div>
                            </div>
-                        </div>
                         </div>
                      </div>
                      <hr/>
                      <div class="col-12 gs_reveal3">
                         <div class="card border-0 mb-3">
-                        <div class="row g-0">
-                           <div class="col-md-4">
-                              <img width="100%" src="img/portfolio/kamiStore.png"  alt="...">
-                           </div>
-                           <div class="col-md-8">
-                              <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                           <div class="row g-0" style="align-items: center;">
+                              <div class="col-md-4" style="cursor: pointer;" onclick="goToLink('https://covid19-track.web.app/')">
+                                 <img width="100%" src="img/portfolio/covid-19.png"  alt="kamiStore">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                 <h5 id="fa-chevron-right" class="card-title" style="cursor: pointer;" onclick="goToLink('https://covid19-track.web.app/')">Covid-19 Tracker Website <i class="fa-solid fa-chevron-right"></i></h5>
+                                 <p class="card-text">technologies used 
+                                    <img width="40px" src="https://cdn.freebiesupply.com/logos/large/2x/react-logo-png-transparent.png" alt="react"/>
+                                    <img width="40px" src="https://www.computerhope.com/jargon/j/javascript.png" alt="JS"/>
+                                    <img width="40px" src="https://img.stackshare.io/service/1904/default_44d81cb9fadbc3688b7e91a6d5217d0ea5358b57.png" alt="MUI"/>
+                                    <img width="40px" src="https://avatars.slack-edge.com/2021-02-11/1743993243810_70c06a3b9201ba9e34c1_512.png" alt="Figma"/>
+                                    <img width="40px" src="https://app.ellipsis-drive.com/images/plugins/leaflet.jpg" alt="leaflet"/>
+                                    <img width="40px" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/logo-man.svg" alt="GSAP"/>
+                                 
+                                 </p>
+                                 <div class="p-3 mb-2 text-dark rounded" style="background-color: #efefef">
+                                    <p class="card-text"><small class="text-muted">
+                                       A COVID-19 Tracker website is a digital platform that provides real-time information and updates on the ongoing COVID-19 pandemic. 
+                                       These websites typically gather data from a Open Disease Data API <a href="https://disease.sh/">disease.sh</a>  to provide the most up-to-date and accurate 
+                                       information on the number of confirmed cases, deaths, and recoveries.</small></p> 
+                                 </div>
+                                   <a href="https://covid19-track.web.app/">Covid-19 Tracker Website</a>
+                                 </div>
                               </div>
                            </div>
                         </div>
+                     </div>
+                     <hr/>
+                     <div class="col-12 gs_reveal3">
+                        <div class="card border-0 mb-3">
+                           <div class="row g-0" style="align-items: center;">
+                              <div class="col-md-4" style="cursor: pointer;" onclick="goToLink('https://kamistore-60f52.web.app/')">
+                                 <img width="100%" src="img/portfolio/kamiStore.png"  alt="kamiStore">
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                 <h5 id="fa-chevron-right" class="card-title" style="cursor: pointer;" onclick="goToLink('https://kamistore-60f52.web.app/')">Kami store application <i class="fa-solid fa-chevron-right"></i></h5>
+                                 <p class="card-text">technologies used 
+                                    <img width="40px" src="https://geeks.ms/clanderas/wp-content/uploads/sites/275/2016/10/asp_net.png" alt="asp.net"/>
+                                    <img width="40px" src="https://cdn.freebiesupply.com/logos/large/2x/react-logo-png-transparent.png" alt="react"/>
+                                    <img width="40px" src="https://community.appian.com/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-00-50/logo.png" alt="JWT"/>
+                                    <img width="40px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbDn-_kLAcnntK415Ct2XJd9Uz6A74Qs6LkvcoS6GNWzG-0zsBTBS1EUTYdJXXJn-JnqQ&usqp=CAU" alt="Redux"/>
+                                    <img width="40px" src="https://img.portalgsti.com.br/OcsHhsi42lFfKiWbY9GVTDliHi8=/200x200/https://www.portalgsti.com.br/media/uploads/community/2016/04/25/sqlite.png" alt="sqlite"/>
+                                    <img width="40px" src="https://rnd-solutions.net/wp-content/uploads/2018/06/azure-icon-250x250.png" alt="Azure"/>
+                                 
+                                 </p>
+                                 <div class="p-3 mb-2 text-dark rounded" style="background-color: #efefef">
+                                    <p class="card-text"><small class="text-muted">
+                                       Kami store application is an online platform that allows customers to shop for groceries and other household items 
+                                       from the comfort of their own homes. These websites typically feature a wide range of products, 
+                                       including fresh produce, meats, dairy, bakery items, and pantry staples, as well as household essentials.</small></p> 
+                                 </div>
+                                   <a href="https://kamistore-60f52.web.app/login">Kami store application</a>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
                      </div>
+                     <hr/>
                </div>
             </div>
          </section>
