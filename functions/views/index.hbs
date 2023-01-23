@@ -277,50 +277,67 @@
          <!-- START SECTION_2 AREA -->
          <div id="myStory">
             <section class="about-area gs_reveal" id="scrollPosition">
-               <div class="container-fluid">
-                  <div class="row">
-                     <div class="col-lg-6 col-md-12">
-                        <div class="about-image gs_reveal">
-                           <img src="img/banner/about-us.png" alt="About us" class="img-fluid" />
-                        </div>
-                     </div>
-                     <div class="col-lg-6 col-md-12 about-title gs_reveal">
-                        <h2 class="text-uppercase pt-50">
-                           <span>My Story</span>
-                        </h2>
-                        <div style="background: rgb(255 255 255);" class="paragraph py-4 gs_reveal">
-                           <div class="info__border">
-                              <p>Introduction</p>
-                              <p class="para">
-                                 Hey, I’m Kamyab. I love everything related to web development.
-                              </p>
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-md-8 align-self-center about-title gs_reveal">
+                           <div class="row row-cols-auto justify-content-center">
+                              <div class="col-12 col-md-6">
+
+                                 <img width="100%" src="img/MyPic/kamyab 2.jpg" alt="kamyab_2" class="img-thumbnail img-fluid" />
+                              </div>   
+                           </div>   
+                           <h2 class="text-uppercase pt-50">
+                              <span>My Story</span>
+                           </h2>
+                           <div class="paragraph py-4 gs_reveal">
+                                 <p class="text-justify">
+                                       Hey, I’m Kamyab. I love everything related to web development.
+                                       Here are some of the highlights of my web development journey:
+                                       <ul>
+                                          <li>Having more than two years of web programming experience.</li>
+                                          <li>Developing a web-based mortgage property application for DoubleClick Lending.</li>
+                                          <li>Getting proficient at ReactJS and Angular front-end frameworks.</li>
+                                          <li>Mastering NodeJS, ASP.NET, Django back-end frameworks.</li>
+                                       </ul>
+
+                                       When I am not coding, I learn new languages, go to the gym, and roller skate.
+                                       I am advanced in Persian and Turkish. I am also learning Spanish at the moment.
+                                 </p>
                            </div>
-                           <div class="info__border">
-                              <p>Skills</p>
-                              <div class="para">
-                                 Here are some of the highlights of my web development journey:
-                                 <ul>
-                                    <li>Having more than two years of web programming experience.</li>
-                                    <li>Developing a web-based mortgage property application for DoubleClick Lending.</li>
-                                    <li>Getting proficient at ReactJS and Angular front-end frameworks.</li>
-                                    <li>Mastering NodeJS, ASP.NET, Django back-end frameworks.</li>
-                                 </ul>
-                              </div>
+                           <div class="row row-cols-auto justify-content-center">
+                              <div class="col-12 col-md-6">
+
+                                 <img width="100%" src="img/MyPic/kamyab 1.jpg" alt="kamyab_2" class="img-thumbnail img-fluid" />
+                              </div>   
+                           </div>   
+                           <h2 class="text-uppercase pt-50">
+                              <span>My Work Experience</span>
+                           </h2>
+                           <div class="paragraph py-4 gs_reveal">
+                                 <p class="d-inline-block text-justify text-truncate">
+                                    <blockquote style="cursor: pointer" data-bs-toggle="collapse" href="#collapseIcon" role="icon" aria-expanded="false" aria-controls="collapseIcon">
+                                       As a full stack software engineer, I started my first career as full time employee in Viral nation, Canada. 
+                                       I have had the opportunity to work on a wide range of projects and technologies, 
+                                       and collaborate with a team of experienced professionals in the tech and marketing field<span id="changeText"> ...</span>
+                                       <span style="cursor: pointer"><i class="fa-sharp fa-solid fa-chevron-down"></i></span>
+                                    </blockquote>
+                                    <span class="collapse" id="collapseIcon">
+                                       <blockquote>
+                                          One of the most interesting aspects of working at Viral Nation has been the variety of projects I have been involved in. 
+                                          The projects I have worked on have used across different industries, and have been challenging, yet successful. 
+                                          For example, I have worked on a project for handling market agencies' and influencers' social media platforms, where I was responsible for developing the entire software 
+                                          stack of the company's web application. This involved working on the front-end, back-end and infrastructure such as React, GraphQL, Node.JS ,and PostgresSQL.
+                                       </blockquote>
+                                       <blockquote>
+                                          Another important aspect of working at Viral Nation is the team. The company has a great team culture, and everyone is willing to help and support each other. This has made working at the company a great experience.
+                                       </blockquote>
+                                       <blockquote>
+                                       Overall, my experience as a full stack software engineer at Viral Nation has been very positive. I have had the opportunity to work on interesting projects, stay up to date with the latest technologies and work with a great team. 
+                                       I look forward to expanding my journey with the other high-tech companies.
+                                       </blockquote>
+                                    </span>
+                                 </p>
                            </div>
-                           <div class="info__border">
-                              <p>Hobbies</p>
-                              <p class="para">
-                                 When I am not coding, I learn new languages, go to the gym, and roller skate.
-                                 I am advanced in Persian and Turkish. I am also learning Spanish at the moment.
-                              </p>
-                           </div>
-                           <p><strong>You can download my Resume for more details <strong>&#128512; &#128071;</strong>.</strong>
-                           </p>
-                           <button type="button" class="btn button primary-button text-uppercase"></button>
-                           <a href="resume/KamyabRouhifarResume.pdf" download="Kamyab Rouhifar Resume">
-                           <i class="fa fa-download"></i> Download cv / Resume
-                           </a>
-                           </button>
                         </div>
                      </div>
                   </div>
@@ -597,5 +614,32 @@
          function scrollToTarget(target) {
             window.scrollTo(0, document.getElementById(target).offsetTop - document.getElementsByClassName('headerMain')[0].offsetHeight);
    }</script>
+      <script>
+         function downloadPDF(url) {
+         fetch(url)
+         .then(response => response.blob())
+         .then(blob => {
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.style.display = 'none';
+            a.href = url;
+            a.download = 'kamyab Resume.pdf';
+            a.click();
+            URL.revokeObjectURL(url);
+         });
+         }
+
+      </script>
+      <script>
+       $('.collapse').on('shown.bs.collapse', function(){
+
+         $(this).parent().find(".fa-sharp").removeClass("fa-chevron-down").addClass("fa-chevron-up");
+         $('#changeText').text(".");
+         }).on('hidden.bs.collapse', function(){
+
+         $(this).parent().find(".fa-sharp").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+         $('#changeText').text(" ...");
+       });
+      </script>
    </body>
 </html>
