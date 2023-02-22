@@ -123,10 +123,13 @@
 /*--- End Header CSS ---*/
 
 /* Start SECTION_1 AREA */
+
 .site-main {
    background: var(--bk_url_whole) no-repeat; 
     background-size: contain;
+    
 }
+
 .site-main .site-banner {
   background: var(--bk_url) no-repeat;
   background-size: contain;
@@ -143,7 +146,7 @@
 
 .banner-image {
   position: relative;
-  width: 600px;
+  width: 500px;
   height: 100%;
 }
 
@@ -1174,4 +1177,110 @@ textarea.input1 + .shadow-input1 {
  .fa-chevron-right {
   -webkit-transition: transform .4s; /* Safari */
   transition: transform .4s;
+}
+
+.LeftSideBarMenu {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: 40px;
+    right: auto;
+    z-index: 10;
+}
+
+.LeftSideBarMenu__list {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.LeftSideBarMenu__list::after { 
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+
+.LeftSideBarMenu__list a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    padding: 10px;
+    font-size: larger;
+}
+
+.LeftSideBarMenu__list a:hover{
+  transform: translateY(-3px) ;
+  color: var(--primary-color2);
+}
+
+.RightSideBarMenu {
+  width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+}
+
+.RightSideBarMenu__list {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.RightSideBarMenu__list::after { 
+  content: "";
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 0px auto;
+  background-color: var(--light-slate);
+}
+
+.RightSideBarMenu__list a {
+    margin: 5px auto;
+    padding: 10px;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+.RightSideBarMenu__list a:hover{
+  transform: translateY(-3px) ;
+  color: var(--primary-color2);
+}
+
+@media (min-width: 800px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+@media (max-width: 800px) {
+  .LeftSideBarMenu {
+    display: none;
+  }
+  .RightSideBarMenu {
+    display: none;
+  }
 }

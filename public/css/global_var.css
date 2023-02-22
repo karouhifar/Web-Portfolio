@@ -26,7 +26,8 @@ html, body{
     --primary-color2: #854fee;
     --title-color: #141313;
     --text-color: #777777;  
-    --text-color-white: #dddddd;  
+    --text-color-white: #dddddd;
+    --light-slate: #a8b2d1;
     --border-color: #2021216b;  
     --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
     --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
