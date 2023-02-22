@@ -45,7 +45,7 @@ app.use((req, res) => {
   res.status(404).render("error", { layout: false });
 });
 // TODO
-// Run server using NodeJS localhost:9000
+//  Run server using NodeJS localhost:9000
 // app.listen(HTTP_PORT, () => console.log("listen to " + HTTP_PORT));
-// Run server using Firebase severless function
+// Run server using Firebase severless functions
 exports.app = functions.https.onRequest(app);

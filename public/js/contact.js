@@ -79,7 +79,7 @@ $(document).ready(function () {
     let email = $("#email").val();
     let subject = $("#subject").val();
     let message = $("#message").val();
-    let URL = "https://safe-atoll-11010.herokuapp.com/send";
+    let URL = "https://eamil-sms-fix.onrender.com/send";
     let loadingMsg = "Loading";
     loadingMsg = loadingMsg.toUpperCase();
 
