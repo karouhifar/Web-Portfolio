@@ -23,7 +23,7 @@
       <!-- fontAwesome file anime icon -->
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css" integrity="sha512-Po8rrCwchD03Wo+2ibHFielZ8luDAVoCyE9i6iFMPyn9+V1tIhGk5wl8iKC9/JfDah5Oe9nV8QzE8HHgjgzp3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <!-- Custom CSS file -->
-      <link rel="stylesheet" href="css/style-new.css" />
+      <link rel="stylesheet" href="css/style-new.css" type="text/css"/>
       <!-- GSAP animation -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
       {{!-- Animation JS Library --}}
@@ -37,6 +37,18 @@
          left: 25%;
          }
       </style>
+      {{!-- Three JS Import module mapping --}}
+      <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+
+      <script type="importmap">
+      {
+         "imports": {
+            "three": "https://unpkg.com/three@0.141.0/build/three.module.js",
+            "three/addons/": "https://unpkg.com/three@0.141.0/examples/jsm/"
+         }
+      }
+      </script>
+
    </head>
    <body>
       <!-- START HEADER -->
@@ -271,6 +283,7 @@
                            </div>
                         </div>
                      </div>
+                        
                      <hr/>
                </div>
             </div>
@@ -287,6 +300,7 @@
                            <div class="col-12 text-center services-title gs_reveal">
                                <h1 class="text-uppercase title-text">my story</h1>
                            </div>
+                      
                            <div class="paragraph pt-4 gs_reveal">
                                  <p class="text-justify">
                                        Hey, I’m Kamyab. I love everything related to web development.
@@ -324,6 +338,9 @@
                                        </blockquote>
                                     </span>
                                  </p>
+                           </div>
+                             <div class="experience">
+                                  <canvas class="experience-canvas"></canvas>
                            </div>
                         </div>
                      </div>
@@ -626,5 +643,6 @@
          $('#changeText').text(" ...");
        });
       </script>
+      <script  type="module" src="js/main.mjs"></script>
    </body>
 </html>
