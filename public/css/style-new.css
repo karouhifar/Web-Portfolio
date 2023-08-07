@@ -1,5 +1,6 @@
 /* import common variables */
 @import url(global_var.css);
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 /*--- Loader CSS ---*/
 .loader-container {
   width: 100%;
@@ -11,6 +12,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+a {
+  color: white;
 }
 
 .spinner {
@@ -157,6 +162,7 @@
 .title-text--intro {
   font-weight: 400;
   font-size: clamp(14px,5vw,16px);
+  font-family: 'Inter', sans-serif;
 }
 
 .title-text .letter-whole-animate .letter-animate .letters-animate {
@@ -291,6 +297,7 @@ font-size: 3rem;
   position: relative;
   border: 3px solid transparent;
   border-radius: 20px;
+  font-weight: 600;
 }
 
 .button.primary-button,
