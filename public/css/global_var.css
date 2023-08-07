@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Coda&family=Coda+Caption:wght@800&family=Open+Sans&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 * {
 	margin: 0px; 
 	padding: 0px; 
@@ -36,10 +37,10 @@ html, body{
     0.125em 0.125em 0.25em rgba(0,0,0,.15);
     --background-color: #f8f9fa ;
     --roboto: 'Roboto', cursive;
-    --Flower: 'Indie Flower', cursive;
+    --Flower: 'Inter', sans-serif;
     --Coda: 'Coda', cursive;
     --Anton:'Anton', sans-serif;
-    --Lobster: 'Lobster', cursive,'Open Sans', sans-serif;
+    --Lobster: 'Inter', sans-serif;
     --bk_url_squares: url();
     --bk_url: url();
     --bk_url_whole: url();
