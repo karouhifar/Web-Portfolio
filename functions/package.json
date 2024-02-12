@@ -4,8 +4,9 @@
   "scripts": {
     "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
-    "start": "node index.js",
-    "deploy": "firebase deploy --only functions",
+    "start": "NODE_ENV=dev node index.js --",
+    "prod": "NODE_ENV=prod node index.js --",
+    "deploy": "NODE_ENV=prod firebase deploy --only functions",
     "logs": "firebase functions:log"
   },
   "engines": {

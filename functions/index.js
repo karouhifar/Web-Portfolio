@@ -13,7 +13,7 @@ const http = require("http");
 const { error } = require("jquery");
 const app = express();
 
-const HTTP_PORT = process.env.PORT || 9000;
+const HTTP_PORT = process.env.PORT || 8800;
 
 // --- Show the current active page such as Home, about, contact pages
 let headerData = {
@@ -46,6 +46,7 @@ app.use((req, res) => {
 });
 // TODO
 //  Run server using NodeJS localhost:9000
-// app.listen(HTTP_PORT, () => console.log("listen to " + HTTP_PORT));
+process.env.NODE_ENV === "dev" ?
+app.listen(HTTP_PORT, () => console.log("listen to " + HTTP_PORT)) :
 // Run server using Firebase severless functions
 exports.app = functions.https.onRequest(app);
